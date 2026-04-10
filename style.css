@@ -7,16 +7,16 @@
    1. VARIABLES & RESET
 ------------------------- */
 :root {
-  /* Couleurs principales */
-  --violet:        #8B5CF6;
-  --violet-light:  #C4B5FD;
-  --violet-pale:   #EDE9FE;
-  --violet-dark:   #6D28D9;
+  /* Couleurs principales — palette logo Mère-Creudi */
+  --violet:        #E8558A;   /* rose logo */
+  --violet-light:  #F7A8C4;
+  --violet-pale:   #FDE8F1;
+  --violet-dark:   #C4346A;
 
-  --green:         #34D399;
-  --green-light:   #A7F3D0;
-  --green-pale:    #ECFDF5;
-  --green-dark:    #059669;
+  --green:         #8BC34A;   /* vert logo */
+  --green-light:   #C5E1A5;
+  --green-pale:    #F1F8E9;
+  --green-dark:    #5D8C27;
 
   /* Neutres */
   --white:         #FFFFFF;
