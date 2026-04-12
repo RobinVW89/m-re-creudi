@@ -3,577 +3,309 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="La Mère-Creudi – La box mensuelle créée par une vraie maman : activités créatives, chimie fun et magie pour les enfants. Thèmes saisonniers, matériaux inclus, 100% surprise !" />
-  <meta name="keywords" content="box enfants, activités créatives, chimie enfant, magie enfant, abonnement enfant, cadeau enfant, box mensuelle, mère-creudi" />
+  <meta name="description" content="Box du Mercredi : 4 mercredis sans stress avec 4 activités sans écran pour les enfants de 4 à 10 ans. Abonnement 22,90€/mois sans engagement." />
+  <meta name="keywords" content="box du mercredi, activité enfant, sans écran, abonnement enfant, box créative, parent enfant" />
   <meta name="author" content="La Mère-Creudi" />
-  <meta property="og:title" content="La Mère-Creudi – Des box créées avec ❤️ par une vraie maman" />
-  <meta property="og:description" content="Créativité, chimie fun et magie livrées chaque mois chez vous. Conçues par La Mère-Creudi, testées et approuvées par ses propres enfants !" />
+  <meta property="og:title" content="Box du Mercredi - 4 mercredis sans stress" />
+  <meta property="og:description" content="Une box mensuelle avec 4 activités ludiques et éducatives, 1 surprise, tout le matériel inclus. 1€ reversé contre la mucoviscidose." />
   <meta property="og:type" content="website" />
-  <title>La Mère-Creudi – Des box créées avec ❤️ par une vraie maman 🎨</title>
+  <title>Box du Mercredi | 4 mercredis sans stress pour vos enfants</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-
-  <!-- ==============================
-       HEADER
-  ============================== -->
   <header class="header" id="top">
     <div class="container header__inner">
-      <a href="#top" class="logo">
-        <img src="Logo Site/LOGO.png" alt="Logo Mère-Creudi" class="logo__img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline'" />
-        <span class="logo__text" style="display:none;">🎨 Mère-Creudi</span>
+      <a href="#top" class="logo" aria-label="Retour en haut">
+        <img src="Logo Site/LOGO.png" alt="Logo La Mère-Creudi" class="logo__img" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline'" />
+        <span class="logo__text" style="display:none;">La Mère-Creudi</span>
       </a>
       <nav class="nav" aria-label="Navigation principale">
         <ul class="nav__list">
-          <li><a href="#concept" class="nav__link">Le concept</a></li>
-          <li><a href="#box-du-mois" class="nav__link">Box du mois</a></li>
-          <li><a href="#abonnements" class="nav__link">Abonnements</a></li>
-          <li><a href="#themes" class="nav__link">Thèmes</a></li>
+          <li><a href="#probleme" class="nav__link">Le problème</a></li>
+          <li><a href="#solution" class="nav__link">La solution</a></li>
+          <li><a href="#contenu" class="nav__link">Contenu</a></li>
+          <li><a href="#prix" class="nav__link">Prix</a></li>
+          <li><a href="#faq" class="nav__link">FAQ</a></li>
         </ul>
       </nav>
-      <a href="#abonnements" class="btn btn--primary btn--sm header__cta">Les box de La Mère-Creudi 🎁</a>
+      <a href="#prix" class="btn btn--primary btn--sm header__cta">Je m'abonne</a>
       <button class="nav__burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
-    <!-- Menu mobile -->
     <div class="nav__mobile" id="mobileMenu">
       <ul class="nav__mobile-list">
-        <li><a href="#concept" class="nav__mobile-link">Le concept</a></li>
-        <li><a href="#box-du-mois" class="nav__mobile-link">Box du mois</a></li>
-        <li><a href="#abonnements" class="nav__mobile-link">Abonnements</a></li>
-        <li><a href="#themes" class="nav__mobile-link">Thèmes</a></li>
-        <li><a href="#abonnements" class="btn btn--primary btn--full">Les box de La Mère-Creudi 🎁</a></li>
+        <li><a href="#probleme" class="nav__mobile-link">Le problème</a></li>
+        <li><a href="#solution" class="nav__mobile-link">La solution</a></li>
+        <li><a href="#contenu" class="nav__mobile-link">Contenu</a></li>
+        <li><a href="#prix" class="nav__mobile-link">Prix</a></li>
+        <li><a href="#faq" class="nav__mobile-link">FAQ</a></li>
+        <li><a href="#prix" class="btn btn--primary btn--full">Je m'abonne</a></li>
       </ul>
     </div>
   </header>
 
   <main>
-
-    <!-- ==============================
-         HERO SECTION
-    ============================== -->
-    <section class="hero" id="hero">
+    <section class="hero section" id="hero">
       <div class="hero__bg-shapes" aria-hidden="true">
         <div class="shape shape--1"></div>
         <div class="shape shape--2"></div>
-        <div class="shape shape--3"></div>
       </div>
       <div class="container hero__inner">
         <div class="hero__content">
-          <div class="hero__badge bounce-in">✨ La box du moment est disponible !</div>
-          <h1 class="hero__title">
-            Les box créées par<br />
-            <span class="highlight">une vraie maman</span>,<br />
-            <span class="highlight highlight--green">pour vos enfants</span> 🎨
-          </h1>
-          <p class="hero__subtitle">
-            Chaque mois, La Mère-Creudi prépare une box thématique pleine de surprises :
-            activités créatives, expériences de chimie et tours de magie — tout est inclus,
-            rien à acheter, juste à s'émerveiller ensemble !
-          </p>
+          <div class="hero__badge">Rituel familial du mercredi</div>
+          <p class="hero__offer">22,90€/mois · Sans engagement · Livraison incluse</p>
+          <h1 class="hero__title">4 mercredis sans stress pour vos enfants</h1>
+          <p class="hero__subtitle">Une box mensuelle avec 4 activités sans écran pour les enfants de 4 à 10 ans.</p>
           <div class="hero__actions">
-            <a href="#abonnements" class="btn btn--primary btn--lg">Je veux ma box 🎁</a>
-            <a href="#box-du-mois" class="btn btn--outline btn--lg">Voir la box du mois</a>
+            <a href="#prix" class="btn btn--primary btn--lg" data-shopify="abonnement-mensuel">Je m'abonne pour 22,90€</a>
+            <a href="#exemple" class="btn btn--outline btn--lg">Voir un exemple de box</a>
           </div>
-          <div class="hero__trust">
-            <span>⭐⭐⭐⭐⭐ Plus de 2 000 familles ravies</span>
-          </div>
+          <p class="hero__trust">Sans engagement · Paiement sécurisé Shopify · Livraison Mondial Relay</p>
         </div>
         <div class="hero__visual" aria-hidden="true">
-          <div class="hero__box-mockup">
-            <div class="box-lid">
-              <span class="box-emoji">🎨</span>
-            </div>
-            <div class="box-body">
-              <div class="box-item">✂️</div>
-              <div class="box-item">🖌️</div>
-              <div class="box-item">🌟</div>
-              <div class="box-item">🧩</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==============================
-         QUI EST LA MÈRE-CREUDI ?
-    ============================== -->
-    <section class="mere-intro section" id="concept">
-      <div class="container">
-        <div class="mere-intro__inner fade-in">
-          <div class="mere-intro__visual">
-            <img src="Logo Site/LOGO.png" alt="La Mère-Creudi" class="mere-intro__logo" />
-          </div>
-          <div class="mere-intro__content">
-            <span class="section__tag">Qui suis-je ?</span>
-            <h2 class="section__title" style="text-align:left;">Salut, moi c'est<br/><span class="highlight">La Mère-Creudi</span> 👋</h2>
-            <p>Maman de 3 enfants débordants d'énergie, j'ai créé ces box parce que je cherchais des activités qui <strong>occupent vraiment</strong> mes loulous — sans me ruiner en fournitures et sans passer des heures à préparer !</p>
-            <p>Chaque box, je choisis personnellement les activités, je les teste avec mes enfants, et je ne les envoie que si elles obtiennent le fameux <strong>"Encore maman !"</strong> 😄</p>
-            <p>Au programme : <strong>créativité, chimie fun et tours de magie</strong> — parce que les enfants méritent des activités qui les font s'émerveiller, pas juste colorier !</p>
-            <a href="#box-du-mois" class="btn btn--primary">Découvrir mes box 🎨</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==============================
-         COMMENT ÇA MARCHE
-    ============================== -->
-    <section class="concept section section--alt" id="comment-ca-marche">
-      <div class="container">
-        <div class="section__header">
-          <span class="section__tag">Comment ça marche ?</span>
-          <h2 class="section__title">Créativité, chimie &amp; magie — 1 thème surprise 🌈</h2>
-          <p class="section__subtitle">
-            La Mère-Creudi prépare tout, vous n'avez qu'à déballer et profiter !
-          </p>
-        </div>
-        <div class="concept__steps">
-          <div class="concept__step fade-in">
-            <div class="concept__icon">🧪</div>
-            <h3>La Mère-Creudi prépare</h3>
-            <p>Je choisis un thème, je teste les activités avec mes enfants, et je regroupe tout le matériel nécessaire.</p>
-          </div>
-          <div class="concept__arrow" aria-hidden="true">→</div>
-          <div class="concept__step fade-in">
-            <div class="concept__icon">🚚</div>
-            <h3>On livre chez vous</h3>
-            <p>La box arrive directement dans votre boîte aux lettres, joliment emballée, prête à être ouverte !</p>
-          </div>
-          <div class="concept__arrow" aria-hidden="true">→</div>
-          <div class="concept__step fade-in">
-            <div class="concept__icon">🎉</div>
-            <h3>Vos enfants s'éclatent !</h3>
-            <p>Peinture, chimie, magie, découpage... Des moments de bonheur partagé en famille.</p>
-          </div>
-          <div class="concept__arrow" aria-hidden="true">→</div>
-          <div class="concept__step fade-in">
-            <div class="concept__icon">💛</div>
-            <h3>Des souvenirs uniques</h3>
-            <p>Chaque création devient un trésor. Chaque expérience, un souvenir que vos enfants n'oublieront pas !</p>
-          </div>
-        </div>
-
-        <div class="concept__activities">
-          <h3 class="concept__activities-title">Ce que La Mère-Creudi glisse dans chaque box 🎁</h3>
-          <div class="activities__grid">
-            <div class="activity__card fade-in">
-              <span class="activity__emoji">🖌️</span>
-              <span class="activity__label">Peinture</span>
-            </div>
-            <div class="activity__card fade-in">
-              <span class="activity__emoji">✂️</span>
-              <span class="activity__label">Découpage</span>
-            </div>
-            <div class="activity__card fade-in">
-              <span class="activity__emoji">🧶</span>
-              <span class="activity__label">Couture/Tissage</span>
-            </div>
-            <div class="activity__card fade-in">
-              <span class="activity__emoji">🏺</span>
-              <span class="activity__label">Modelage</span>
-            </div>
-            <div class="activity__card fade-in">
-              <span class="activity__emoji">🧩</span>
-              <span class="activity__label">Construction</span>
-            </div>
-            <div class="activity__card fade-in">
-              <span class="activity__emoji">🌱</span>
-              <span class="activity__label">Nature &amp; Plantes</span>
-            </div>
-            <div class="activity__card fade-in">
-              <span class="activity__emoji">⚗️</span>
-              <span class="activity__label">Chimie fun</span>
-            </div>
-            <div class="activity__card fade-in">
-              <span class="activity__emoji">🪄</span>
-              <span class="activity__label">Magie</span>
-            </div>
-            <div class="activity__card fade-in">
-              <span class="activity__emoji">🔬</span>
-              <span class="activity__label">Expériences</span>
-            </div>
-            <div class="activity__card fade-in">
-              <span class="activity__emoji">🎭</span>
-              <span class="activity__label">Théâtre &amp; Danse</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==============================
-         BOX DU MOIS (achat à l'unité)
-    ============================== -->
-    <section class="shop section section--alt" id="box-du-mois">
-      <div class="container">
-        <div class="section__header">
-          <span class="section__tag">Achat à l'unité</span>
-          <h2 class="section__title">La box du moment 🌟</h2>
-          <p class="section__subtitle">Pas encore abonné·e ? Commandez une seule box pour tester — La Mère-Creudi vous garantit que vous reviendrez ! 😄</p>
-        </div>
-
-        <!-- Box du moment (édition limitée) -->
-        <div class="current-box fade-in" id="box-actuelle">
-          <div class="current-box__badge pulse">⚡ Édition limitée</div>
-          <div class="current-box__inner">
-            <div class="current-box__visual">
-              <div class="box-preview">
-                <span class="box-preview__emoji">🌸</span>
-                <span class="box-preview__theme">Thème Printemps</span>
-              </div>
-            </div>
-            <div class="current-box__content">
-              <h3 class="current-box__title">Box Printemps 🌸</h3>
-              <p class="current-box__desc">
-                🌸 Cette saison, La Mère-Creudi a tout misé sur le printemps ! La nature s'éveille,
-                on sort les pinceaux et les ciseaux. Une box testée &amp; approuvée par ses 3 loulous — succès total à la maison ! 🦋
-              </p>
-              <ul class="current-box__list">
-                <li>🌺 Herbier fleuri à créer</li>
-                <li>🌿 Couronne de fleurs à tisser</li>
-                <li>🎨 Aquarelle de jardins</li>
-                <li>🦋 Mobile papillons à découper</li>
-              </ul>
-              <div class="current-box__price">
-                <span class="price">27€</span>
-                <span class="price__info">Livraison offerte dès 2 box</span>
-              </div>
-              <a href="#" class="btn btn--primary btn--lg" data-shopify="box-du-mois">
-                Commander cette box 🛒
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Anciennes box en stock -->
-        <div class="old-boxes">
-          <h3 class="old-boxes__title">Les anciennes box de La Mère-Creudi 📦</h3>
-          <div class="old-boxes__grid">
-
-            <div class="product-card fade-in">
-              <div class="product-card__badge">Stock limité</div>
-              <div class="product-card__visual">🎄</div>
-              <div class="product-card__body">
-                <h4>Box Noël 2024</h4>
-                <p>La Mère-Creudi a mis toute la magie de Noël dans cette box ! Décos, flocons, guirlandes et une petite expérience chimie hivernale ✨</p>
-                <div class="product-card__price">24€</div>
-                <a href="#" class="btn btn--outline btn--full" data-shopify="box-noel-2024">
-                  Ajouter au panier 🎄
-                </a>
-              </div>
-            </div>
-
-            <div class="product-card fade-in">
-              <div class="product-card__badge">Stock limité</div>
-              <div class="product-card__visual">🎃</div>
-              <div class="product-card__body">
-                <h4>Box Halloween 2024</h4>
-                <p>La box préférée des enfants ! Citrouilles, potions de chimie façon sorcière et tours de magie effrayants… mais rigolos ! 🎃</p>
-                <div class="product-card__price">24€</div>
-                <a href="#" class="btn btn--outline btn--full" data-shopify="box-halloween-2024">
-                  Ajouter au panier 🎃
-                </a>
-              </div>
-            </div>
-
-            <div class="product-card fade-in">
-              <div class="product-card__badge product-card__badge--sold">Presque épuisé</div>
-              <div class="product-card__visual">☀️</div>
-              <div class="product-card__body">
-                <h4>Box Été 2024</h4>
-                <p>L'été selon La Mère-Creudi : des créations hautes en couleur, une expérience volcanique et un atelier tie-dye ☀️</p>
-                <div class="product-card__price">24€</div>
-                <a href="#" class="btn btn--outline btn--full" data-shopify="box-ete-2024">
-                  Ajouter au panier ☀️
-                </a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==============================
-         ABONNEMENTS
-    ============================== -->
-    <section class="abonnements section" id="abonnements">
-      <div class="container">
-        <div class="section__header">
-          <span class="section__tag">Abonnements</span>
-          <h2 class="section__title">Recevez les box de La Mère-Creudi 🎁</h2>
-          <p class="section__subtitle">"Plus je prépare de box pour vos enfants, plus j'y glisse de surprises !" — La Mère-Creudi 😄</p>
-        </div>
-
-        <div class="pricing__grid">
-
-          <!-- 3 mois -->
-          <div class="pricing-card fade-in">
-            <div class="pricing-card__header">
-              <span class="pricing-card__duration">3 mois</span>
-              <div class="pricing-card__price">
-                <span class="pricing-card__amount">60€</span>
-                <span class="pricing-card__per">soit 20€/mois</span>
-              </div>
-            </div>
-            <ul class="pricing-card__features">
-              <li>✅ 3 box de La Mère-Creudi</li>
-              <li>✅ Activités créatives, chimie &amp; magie</li>
-              <li>✅ Matériaux inclus</li>
-              <li>✅ Livraison comprise</li>
-              <li>✅ Sans engagement</li>
+          <div class="hero-card fade-in">
+            <h3>Dans chaque box</h3>
+            <ul>
+              <li>4 activités (1 par mercredi)</li>
+              <li>1 surprise</li>
+              <li>Matériel complet</li>
+              <li>Cartes et fiches papier</li>
             </ul>
-            <a href="#" class="btn btn--outline btn--full" data-shopify="abonnement-3mois">
-              Choisir 3 mois →
-            </a>
           </div>
-
-          <!-- 6 mois — MEILLEURE OFFRE -->
-          <div class="pricing-card pricing-card--featured fade-in">
-            <div class="pricing-card__ribbon">⭐ Meilleure offre</div>
-            <div class="pricing-card__header">
-              <span class="pricing-card__duration">6 mois</span>
-              <div class="pricing-card__price">
-                <span class="pricing-card__amount">109€</span>
-                <span class="pricing-card__per">soit 18,17€/mois</span>
-              </div>
-            </div>
-            <ul class="pricing-card__features">
-              <li>✅ 6 box de La Mère-Creudi</li>
-              <li>✅ Activités créatives, chimie &amp; magie</li>
-              <li>✅ Matériaux inclus</li>
-              <li>✅ Livraison comprise</li>
-              <li>✅ 1 surprise bonus de La Mère-Creudi 🎁</li>
-              <li>✅ Accès prioritaire éditions limitées</li>
-            </ul>
-            <a href="#" class="btn btn--primary btn--full" data-shopify="abonnement-6mois">
-              Choisir 6 mois →
-            </a>
-          </div>
-
-          <!-- 12 mois -->
-          <div class="pricing-card fade-in">
-            <div class="pricing-card__header">
-              <span class="pricing-card__duration">12 mois</span>
-              <div class="pricing-card__price">
-                <span class="pricing-card__amount">199€</span>
-                <span class="pricing-card__per">soit 16,58€/mois</span>
-              </div>
-            </div>
-            <ul class="pricing-card__features">
-              <li>✅ 12 box de La Mère-Creudi</li>
-              <li>✅ Activités créatives, chimie &amp; magie</li>
-              <li>✅ Matériaux inclus</li>
-              <li>✅ Livraison comprise</li>
-              <li>✅ 2 surprises bonus 🎁🎁</li>
-              <li>✅ Accès prioritaire éditions limitées</li>
-              <li>✅ Carte membre "Famille Mère-Creudi"</li>
-            </ul>
-            <a href="#" class="btn btn--outline btn--full" data-shopify="abonnement-12mois">
-              Choisir 12 mois →
-            </a>
-          </div>
-
         </div>
-
-        <p class="pricing__note">
-          💳 Paiement sécurisé via Shopify · 🔄 Résiliation simple · 📦 Première box envoyée sous 72h
-        </p>
       </div>
     </section>
 
-    <!-- ==============================
-         THÈMES
-    ============================== -->
-    <section class="themes section section--alt" id="themes">
+    <section class="section" id="visuels">
       <div class="container">
         <div class="section__header">
-          <span class="section__tag">Ses thèmes</span>
-          <h2 class="section__title">Une année de box par La Mère-Creudi 🗓️</h2>
-          <p class="section__subtitle">La Mère-Creudi suit le rythme des saisons et des fêtes pour que chaque box soit une vraie petite fête à la maison !</p>
+          <span class="section__tag">Preuves visuelles</span>
+          <h2 class="section__title">Ce que les familles reçoivent vraiment</h2>
         </div>
-
-        <div class="themes__grid">
-          <div class="theme-card fade-in" style="--theme-color: #8B5CF6;">
-            <div class="theme-card__emoji">🎄</div>
-            <h3>Box Noël</h3>
-            <p>Décorations, cartes, guirlandes et magie hivernale !</p>
-          </div>
-          <div class="theme-card fade-in" style="--theme-color: #F59E0B;">
-            <div class="theme-card__emoji">🎃</div>
-            <h3>Box Halloween</h3>
-            <p>Citrouilles rigolos, fantômes et décos frissons-fun !</p>
-          </div>
-          <div class="theme-card fade-in" style="--theme-color: #10B981;">
-            <div class="theme-card__emoji">🌸</div>
-            <h3>Box Printemps</h3>
-            <p>Fleurs, papillons, jardins et couleurs pastel !</p>
-          </div>
-          <div class="theme-card fade-in" style="--theme-color: #F97316;">
-            <div class="theme-card__emoji">☀️</div>
-            <h3>Box Été</h3>
-            <p>Plage, soleil, glaces et vacances en couleurs !</p>
-          </div>
-          <div class="theme-card fade-in" style="--theme-color: #EF4444;">
-            <div class="theme-card__emoji">🍁</div>
-            <h3>Box Automne</h3>
-            <p>Feuilles, champignons, châtaignes et tons chauds !</p>
-          </div>
-          <div class="theme-card fade-in" style="--theme-color: #6366F1;">
-            <div class="theme-card__emoji">🎆</div>
-            <h3>Box Fête &amp; Magie</h3>
-            <p>Anniversaires, feux d'artifice et célébrations !</p>
-          </div>
-          <div class="theme-card fade-in" style="--theme-color: #EC4899;">
-            <div class="theme-card__emoji">🌍</div>
-            <h3>Box Tour du Monde</h3>
-            <p>Cultures, paysages et artisanats du monde entier !</p>
-          </div>
-          <div class="theme-card fade-in" style="--theme-color: #0EA5E9;">
-            <div class="theme-card__emoji">🚀</div>
-            <h3>Box Espace</h3>
-            <p>Planètes, étoiles et aventures intergalactiques !</p>
-          </div>
+        <div class="visual-grid">
+          <article class="visual-card fade-in">
+            <div class="visual-card__ph" aria-hidden="true">📦</div>
+            <h3>Box ouverte</h3>
+            <p>Vue d'ensemble de la box avec tout le matériel inclus.</p>
+          </article>
+          <article class="visual-card fade-in">
+            <div class="visual-card__ph" aria-hidden="true">🃏</div>
+            <h3>Cartes et fiches</h3>
+            <p>Supports papier prêts à l'emploi pour guider chaque activité.</p>
+          </article>
+          <article class="visual-card fade-in">
+            <div class="visual-card__ph" aria-hidden="true">🧒</div>
+            <h3>Enfants en activité</h3>
+            <p>Moment concret d'utilisation, sans écran, à la maison.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ==============================
-         SECTION RASSURANCE
-    ============================== -->
-    <section class="reassurance section" id="reassurance">
+    <section class="section" id="probleme">
       <div class="container">
         <div class="section__header">
-          <span class="section__tag">La promesse de La Mère-Creudi</span>
-          <h2 class="section__title">"Je m'occupe de tout, vous profitez !" 💛</h2>
+          <span class="section__tag">Le problème</span>
+          <h2 class="section__title">Chaque mercredi, c'est la même galère</h2>
+          <p class="section__subtitle">"Je m'ennuie" · "On fait quoi aujourd'hui ?" · "J'ai déjà fini"</p>
         </div>
-
-        <div class="reassurance__grid">
-          <div class="reassurance__item fade-in">
-            <div class="reassurance__icon">📦</div>
-            <h3>Emballée avec ❤️</h3>
-            <p>La Mère-Creudi emballe chaque box avec soin — comme un cadeau qu'on prend plaisir à offrir.</p>
-          </div>
-          <div class="reassurance__item fade-in">
-            <div class="reassurance__icon">✅</div>
-            <h3>Testée par ses enfants</h3>
-            <p>Chaque activité est testée à la maison par les 3 enfants de La Mère-Creudi. Si ça ne les emballe pas, ça ne part pas !</p>
-          </div>
-          <div class="reassurance__item fade-in">
-            <div class="reassurance__icon">🎯</div>
-            <h3>Pour les 4-10 ans</h3>
-            <p>Conçues pour les enfants de 4 à 10 ans. Des notices claires et illustrées — même les papas s'en sortent ! 😄</p>
-          </div>
-          <div class="reassurance__item fade-in">
-            <div class="reassurance__icon">🔄</div>
-            <h3>Sans engagement</h3>
-            <p>Résiliez quand vous voulez, sans frais. Votre satisfaction est notre priorité.</p>
-          </div>
-          <div class="reassurance__item fade-in">
-            <div class="reassurance__icon">💌</div>
-            <h3>La Mère-Creudi répond</h3>
-            <p>Une question ? C'est La Mère-Creudi en personne qui répond — dans les 24h, avec le sourire et souvent un emoji 😊</p>
-          </div>
-          <div class="reassurance__item fade-in">
-            <div class="reassurance__icon">🌿</div>
-            <h3>Écoresponsable</h3>
-            <p>Emballages recyclés et matériaux naturels privilégiés. On prend soin de la planète aussi !</p>
-          </div>
-        </div>
-
-        <div class="testimonials">
-          <h3 class="testimonials__title">Ce que disent les familles de La Mère-Creudi ❤️</h3>
-          <div class="testimonials__grid">
-            <div class="testimonial fade-in">
-              <p>"Ma fille attend la box de La Mère-Creudi avec tellement d'impatience ! Le jour de livraison c'est la fête à la maison !"</p>
-              <span>— Sophie, maman de Léa (6 ans)</span>
-            </div>
-            <div class="testimonial fade-in">
-              <p>"La box chimie Halloween c'était juste INCROYABLE. Mon fils m'a dit que c'était 'la meilleure journée de sa vie' 😂"</p>
-              <span>— Thomas, papa de Maxime (8 ans)</span>
-            </div>
-            <div class="testimonial fade-in">
-              <p>"On a offert un abonnement 6 mois pour l'anniversaire — La Mère-Creudi a cartonné, c'est le cadeau préféré de l'année ! 🎉"</p>
-              <span>— Marie, tante de Juliette (7 ans)</span>
-            </div>
-          </div>
+        <div class="problem-grid">
+          <article class="info-card fade-in">
+            <h3>Manque d'idées</h3>
+            <p>Trouver une activité adaptée prend du temps et de l'énergie.</p>
+          </article>
+          <article class="info-card fade-in">
+            <h3>Trop d'écrans</h3>
+            <p>Quand on manque de solutions, les écrans prennent vite la place.</p>
+          </article>
+          <article class="info-card fade-in">
+            <h3>Charge mentale parentale</h3>
+            <p>Préparer le matériel et gérer le rythme devient épuisant.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ==============================
-         CTA FINAL
-    ============================== -->
-    <section class="cta-final section">
+    <section class="section section--alt" id="solution">
       <div class="container">
-        <div class="cta-final__inner fade-in">
-          <div class="cta-final__emoji">🎨</div>
-          <h2>Rejoignez la famille Mère-Creudi !</h2>
-          <p>"Chaque mois, je prépare ma box avec une seule idée en tête : que vos enfants passent un moment magique. Rejoignez plus de 2 000 familles qui me font confiance !" 💛<br/><em>— La Mère-Creudi</em></p>
-          <div class="cta-final__actions">
-            <a href="#abonnements" class="btn btn--primary btn--lg">Je veux mes box 🚀</a>
-            <a href="#box-du-mois" class="btn btn--white btn--lg">Tester une box d'abord</a>
-          </div>
+        <div class="section__header">
+          <span class="section__tag">La solution</span>
+          <h2 class="section__title">1 box = 4 mercredis</h2>
+          <p class="section__subtitle">Un calendrier prêt à l'emploi pour tout le mois.</p>
+        </div>
+        <div class="calendar-wrap fade-in">
+          <div class="calendar-card"><span>Mercredi 1</span><strong>Activité découverte</strong></div>
+          <div class="calendar-card"><span>Mercredi 2</span><strong>Jeu d'indices</strong></div>
+          <div class="calendar-card"><span>Mercredi 3</span><strong>Création guidée</strong></div>
+          <div class="calendar-card"><span>Mercredi 4</span><strong>Final surprise</strong></div>
         </div>
       </div>
     </section>
 
+    <section class="section" id="contenu">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Contenu de la box</span>
+          <h2 class="section__title">Tout est prêt, vous n'avez plus qu'à profiter</h2>
+        </div>
+        <div class="content-grid">
+          <article class="content-item fade-in"><h3>4 activités complètes</h3><p>Une par mercredi, progressives et variées.</p></article>
+          <article class="content-item fade-in"><h3>1 surprise</h3><p>Un petit bonus pour garder l'effet waouh.</p></article>
+          <article class="content-item fade-in"><h3>Matériel inclus</h3><p>Pas besoin d'acheter quoi que ce soit en plus.</p></article>
+          <article class="content-item fade-in"><h3>Supports papier</h3><p>Cartes, fiches, jeux imprimés et faciles à utiliser.</p></article>
+          <article class="content-item fade-in"><h3>1 accessoire</h3><p>Exemple : loupe, pinceau ou stickers.</p></article>
+          <article class="content-item fade-in"><h3>+ de 2h d'activités</h3><p>Un vrai moment parent-enfant sans écran.</p></article>
+        </div>
+        <p class="section__subtitle content-note">Coût cible de fabrication : 5 à 6€ par box pour garder un modèle durable.</p>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="exemple">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Exemple box 1</span>
+          <h2 class="section__title">Qui a mangé le gâteau ?</h2>
+          <p class="section__subtitle">Une mini enquête en 4 semaines.</p>
+        </div>
+        <ol class="story-timeline fade-in">
+          <li><strong>Semaine 1 :</strong> Découverte des suspects (cartes animaux).</li>
+          <li><strong>Semaine 2 :</strong> Indices à associer pour avancer dans l'enquête.</li>
+          <li><strong>Semaine 3 :</strong> Alibis à analyser comme de vrais détectives.</li>
+          <li><strong>Semaine 4 :</strong> Résolution finale et révélation du coupable.</li>
+        </ol>
+        <div class="included-box fade-in">
+          <h3>Objets inclus</h3>
+          <ul>
+            <li>Loupe</li>
+            <li>Bonbons</li>
+            <li>Enveloppes</li>
+            <li>Autocollants</li>
+          </ul>
+          <a href="#" class="btn btn--outline" data-shopify="box-exemple">Voir cette box sur Shopify</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="arguments">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Pourquoi ça marche</span>
+          <h2 class="section__title">Un format simple et efficace</h2>
+        </div>
+        <div class="argument-list">
+          <article class="info-card fade-in"><h3>Sans écran</h3><p>Les enfants manipulent, créent et jouent vraiment.</p></article>
+          <article class="info-card fade-in"><h3>Ludique et éducatif</h3><p>Chaque activité développe logique, motricité et imagination.</p></article>
+          <article class="info-card fade-in"><h3>Simple à utiliser</h3><p>Tout est expliqué pas à pas pour les parents.</p></article>
+          <article class="info-card fade-in"><h3>Moment parent-enfant</h3><p>Un rituel du mercredi qui crée des souvenirs.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="engagement">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Engagement</span>
+          <h2 class="section__title">1€ reversé contre la mucoviscidose pour chaque box</h2>
+          <p class="section__subtitle">Chaque abonnement aide concrètement une cause qui nous tient à coeur.</p>
+        </div>
+        <div class="donation-box fade-in">
+          <p class="donation-box__label">Montant déjà reversé</p>
+          <p class="donation-box__value"><span id="donationCounter" data-target="2840">0</span> €</p>
+          <p class="donation-box__meta">Compteur public mis à jour mensuellement · Association partenaire (nom à confirmer)</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="prix">
+      <div class="container">
+        <div class="pricing-main fade-in">
+          <span class="section__tag">Offre</span>
+          <h2>22,90€/mois</h2>
+          <p>Sans engagement · Livraison incluse · Abonnement Shopify</p>
+          <a href="#" class="btn btn--primary btn--lg" data-shopify="abonnement-mensuel">Je m'abonne</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="rassurance">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Rassurance</span>
+          <h2 class="section__title">Aucune mauvaise surprise</h2>
+        </div>
+        <div class="argument-list">
+          <article class="info-card fade-in"><h3>Résiliation facile</h3><p>Un clic depuis votre espace client Shopify.</p></article>
+          <article class="info-card fade-in"><h3>Paiement sécurisé</h3><p>CB via checkout Shopify certifié.</p></article>
+          <article class="info-card fade-in"><h3>Livraison mensuelle</h3><p>Expédition via Mondial Relay chaque mois.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="avis">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Avis familles</span>
+          <h2 class="section__title">Les parents recommandent Box du Mercredi</h2>
+          <p class="section__subtitle">Note moyenne : 4,8/5 (avis clients collectés après livraison).</p>
+        </div>
+        <div class="review-grid">
+          <article class="info-card fade-in">
+            <h3>Claire, maman de Léo (6 ans)</h3>
+            <p>"Le mercredi est devenu un moment attendu. Tout est prêt, zéro stress."</p>
+          </article>
+          <article class="info-card fade-in">
+            <h3>Nadia, maman de Yasmine (8 ans)</h3>
+            <p>"Les activités sont variées et vraiment sans écran. Ma fille adore."</p>
+          </article>
+          <article class="info-card fade-in">
+            <h3>Thomas, papa de Max (7 ans)</h3>
+            <p>"Simple, clair et ludique. On passe enfin un vrai moment parent-enfant."</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="faq">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">FAQ</span>
+          <h2 class="section__title">Questions fréquentes</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item fade-in"><summary>Quel âge est recommandé ?</summary><p>Les activités sont conçues pour les enfants de 4 à 10 ans.</p></details>
+          <details class="faq-item fade-in"><summary>Combien de temps durent les activités ?</summary><p>La box propose plus de 2 heures d'activités au total, réparties sur 4 mercredis.</p></details>
+          <details class="faq-item fade-in"><summary>Comment résilier l'abonnement ?</summary><p>Depuis votre compte client Shopify, sans frais ni justification.</p></details>
+          <details class="faq-item fade-in"><summary>Comment se passe la livraison ?</summary><p>Expédition mensuelle via Mondial Relay, avec suivi.</p></details>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- ==============================
-       FOOTER
-  ============================== -->
   <footer class="footer">
     <div class="container footer__inner">
-      <div class="footer__brand">
-        <a href="#top" class="logo logo--white">
-          <img src="Logo Site/LOGO.png" alt="Logo Mère-Creudi" class="logo__img logo__img--white" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline'" />
-          <span class="logo__text" style="display:none;">🎨 Mère-Creudi</span>
+      <div>
+        <a href="#top" class="logo">
+          <img src="Logo Site/LOGO.png" alt="Logo La Mère-Creudi" class="logo__img" />
         </a>
-        <p>Des box conçues par une vraie maman, testées par ses enfants, adorées par les vôtres. 💛</p>
+        <p>Ce n'est pas une simple box. C'est un rituel du mercredi pour les familles.</p>
       </div>
       <div class="footer__links">
-        <h4>Nos offres</h4>
-        <ul>
-          <li><a href="#box-du-mois">Box du mois</a></li>
-          <li><a href="#abonnements">Abonnement 3 mois</a></li>
-          <li><a href="#abonnements">Abonnement 6 mois</a></li>
-          <li><a href="#abonnements">Abonnement 12 mois</a></li>
-        </ul>
-      </div>
-      <div class="footer__links">
-        <h4>Infos</h4>
-        <ul>
-          <li><a href="#" data-shopify="faq">FAQ</a></li>
-          <li><a href="#" data-shopify="livraison">Livraison</a></li>
-          <li><a href="#" data-shopify="contact">Contact</a></li>
-          <li><a href="#" data-shopify="mentions-legales">Mentions légales</a></li>
-        </ul>
-      </div>
-      <div class="footer__social">
-        <h4>Suivez-nous</h4>
-        <div class="social__links">
-          <a href="#" class="social__link" aria-label="Instagram Mère-Creudi">📸 Instagram</a>
-          <a href="#" class="social__link" aria-label="Facebook Mère-Creudi">👥 Facebook</a>
-          <a href="#" class="social__link" aria-label="Pinterest Mère-Creudi">📌 Pinterest</a>
-        </div>
-        <div class="footer__newsletter">
-          <p>Recevez nos inspirations créatives !</p>
-          <a href="#" class="btn btn--outline btn--sm" data-shopify="newsletter">📬 S'inscrire</a>
-        </div>
+        <a href="#prix">Abonnement 22,90€</a>
+        <a href="#faq">FAQ</a>
+        <a href="#" data-shopify="contact">Contact</a>
+        <a href="#" data-shopify="mentions-legales">Mentions légales</a>
       </div>
     </div>
     <div class="footer__bottom">
-      <div class="container">
-        <p>© 2025 La Mère-Creudi · Paiement sécurisé via Shopify 🔒 · Fait avec ❤️ par une vraie maman, en France</p>
-      </div>
+      <div class="container">© 2026 La Mère-Creudi · Paiement CB via Shopify · Livraison Mondial Relay</div>
     </div>
   </footer>
+
+  <a href="#prix" class="mobile-sticky-cta" data-shopify="abonnement-mensuel">Je m'abonne · 22,90€</a>
 
   <script src="script.js"></script>
 </body>
