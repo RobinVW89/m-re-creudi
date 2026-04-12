@@ -180,8 +180,8 @@ function initSmoothScroll() {
 ======================================================== */
 const COUNTDOWN_CONFIG = {
   SHOW_COUNTDOWN: true,
-  // Date de fin de l'édition limitée (format: YYYY-MM-DD)
-  END_DATE: '2025-05-31T23:59:59',
+  // Date des premières livraisons
+  END_DATE: '2026-09-01T00:00:00',
 };
 
 function initCountdown() {
@@ -195,7 +195,7 @@ function initCountdown() {
   countdownEl.className = 'countdown';
   countdownEl.setAttribute('aria-live', 'polite');
   countdownEl.innerHTML = `
-    <p class="countdown__label">⏰ Offre disponible encore :</p>
+    <p class="countdown__label">🚀 Premières livraisons dans :</p>
     <div class="countdown__timer">
       <div class="countdown__unit"><span id="cd-days">--</span><small>jours</small></div>
       <div class="countdown__sep">:</div>
@@ -268,7 +268,7 @@ function initCountdown() {
     const diff = end - now;
 
     if (diff <= 0) {
-      countdownEl.innerHTML = '<p class="countdown__label">✅ Stock épuisé — abonnez-vous pour la prochaine box !</p>';
+      countdownEl.innerHTML = '<p class="countdown__label">🎉 Premières livraisons en cours — abonnez-vous !</p>';
       return;
     }
 

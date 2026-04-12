@@ -3,19 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="La Mère-Creudi – La box mensuelle créée par une vraie maman : activités créatives, chimie fun et magie pour les enfants. Thèmes saisonniers, matériaux inclus, 100% surprise !" />
+  <meta name="description" content="La Mère-Creudi – Box mensuelle pour les 4-10 ans : 4 activités créatives, chimie fun et magie. Premières livraisons septembre 2026. 1er mois sans risque. 1€ reversé contre la mucoviscidose." />
   <meta name="keywords" content="box enfants, activités créatives, chimie enfant, magie enfant, abonnement enfant, cadeau enfant, box mensuelle, mère-creudi" />
   <meta name="author" content="La Mère-Creudi" />
   <meta property="og:title" content="La Mère-Creudi – Des box créées avec ❤️ par une vraie maman" />
   <meta property="og:description" content="Créativité, chimie fun et magie livrées chaque mois chez vous. Conçues par La Mère-Creudi, testées et approuvées par ses propres enfants !" />
   <meta property="og:type" content="website" />
-  <title>La Mère-Creudi – Des box créées avec ❤️ par une vraie maman 🎨</title>
+  <title>La Mère-Creudi – Box créatives 4-10 ans · Premières livraisons septembre 2026</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
+
+  <!-- Bannière pre-launch -->
+  <div class="launch-banner" role="complementary" aria-label="Date de lancement">
+    <span>🚀 Pré-lancement · Premières livraisons : <strong>1er septembre 2026</strong></span>
+    <a href="#abonnements" class="launch-banner__cta">Je réserve ma place →</a>
+  </div>
 
   <!-- ==============================
        HEADER
@@ -64,7 +70,7 @@
       </div>
       <div class="container hero__inner">
         <div class="hero__content">
-          <div class="hero__badge bounce-in">✨ La box du moment est disponible !</div>
+          <div class="hero__badge bounce-in">🚀 Premières livraisons : 1er septembre 2026 !</div>
           <h1 class="hero__title">
             Les box créées par<br />
             <span class="highlight">une vraie maman</span>,<br />
@@ -74,7 +80,7 @@
             Chaque mois, 1 box = 4 activités différentes pour occuper vos enfants sans écran.
             Tout est inclus pour vivre un vrai temps partagé parent-enfant, simplement.
           </p>
-          <p class="hero__offer">22,90€/mois · Sans engagement · Livraison incluse · 1€ reversé</p>
+          <p class="hero__offer">22,90€/mois · Pour les 4-10 ans · Livraison incluse · 🛡️ 1er mois sans risque</p>
           <div class="hero__actions">
             <a href="#abonnements" class="btn btn--primary btn--lg" data-track="cta-hero-main">Je m'abonne pour 22,90€ 🎁</a>
             <a href="#box-du-mois" class="btn btn--outline btn--lg" data-track="cta-hero-secondary">Voir la box du mois</a>
@@ -83,17 +89,14 @@
             <span>⭐⭐⭐⭐⭐ Plus de 2 000 familles ravies · Note moyenne 4,8/5</span>
           </div>
         </div>
-        <div class="hero__visual" aria-hidden="true">
-          <div class="hero__box-mockup">
-            <div class="box-lid">
-              <span class="box-emoji">🎨</span>
-            </div>
-            <div class="box-body">
-              <div class="box-item">✂️</div>
-              <div class="box-item">🖌️</div>
-              <div class="box-item">🌟</div>
-              <div class="box-item">🧩</div>
-            </div>
+        <div class="hero__visual">
+          <div class="hero__photo-wrap">
+            <!-- Remplacer par une vraie photo de la box ouverte -->
+            <img src="https://picsum.photos/seed/creudi-hero/600/500"
+                 alt="Enfant faisant des activités créatives avec sa maman"
+                 class="hero__photo" loading="eager" />
+            <div class="hero__photo-badge">🎯 Pour les 4-10 ans</div>
+            <div class="hero__photo-guarantee">🛡️ 1er mois sans risque</div>
           </div>
         </div>
       </div>
@@ -222,10 +225,11 @@
           <div class="current-box__badge pulse">⚡ Édition limitée</div>
           <div class="current-box__inner">
             <div class="current-box__visual">
-              <div class="box-preview">
-                <span class="box-preview__emoji">🌸</span>
-                <span class="box-preview__theme">Thème Printemps</span>
-              </div>
+              <!-- Remplacer par une vraie photo de la box -->
+              <img src="https://picsum.photos/seed/printemps-activites/600/450"
+                   alt="Box Printemps — activités créatives enfants"
+                   class="current-box__img" loading="lazy" />
+              <div class="current-box__theme-tag">🌸 Thème Printemps</div>
             </div>
             <div class="current-box__content">
               <h3 class="current-box__title">Box Printemps 🌸</h3>
@@ -266,7 +270,9 @@
 
             <div class="product-card fade-in">
               <div class="product-card__badge">Stock limité</div>
-              <div class="product-card__visual">🎄</div>
+              <div class="product-card__visual">
+                <img src="https://picsum.photos/seed/noel-box/400/280" alt="Box Noël 2024" class="product-card__img" loading="lazy" />
+              </div>
               <div class="product-card__body">
                 <h4>Box Noël 2024</h4>
                 <p>La Mère-Creudi a mis toute la magie de Noël dans cette box ! Décos, flocons, guirlandes et une petite expérience chimie hivernale ✨</p>
@@ -279,7 +285,9 @@
 
             <div class="product-card fade-in">
               <div class="product-card__badge">Stock limité</div>
-              <div class="product-card__visual">🎃</div>
+              <div class="product-card__visual">
+                <img src="https://picsum.photos/seed/halloween-box/400/280" alt="Box Halloween 2024" class="product-card__img" loading="lazy" />
+              </div>
               <div class="product-card__body">
                 <h4>Box Halloween 2024</h4>
                 <p>La box préférée des enfants ! Citrouilles, potions de chimie façon sorcière et tours de magie effrayants… mais rigolos ! 🎃</p>
@@ -292,7 +300,9 @@
 
             <div class="product-card fade-in">
               <div class="product-card__badge product-card__badge--sold">Presque épuisé</div>
-              <div class="product-card__visual">☀️</div>
+              <div class="product-card__visual">
+                <img src="https://picsum.photos/seed/ete-box/400/280" alt="Box Été 2024" class="product-card__img" loading="lazy" />
+              </div>
               <div class="product-card__body">
                 <h4>Box Été 2024</h4>
                 <p>L'été selon La Mère-Creudi : des créations hautes en couleur, une expérience volcanique et un atelier tie-dye ☀️</p>
@@ -391,7 +401,7 @@
         </div>
 
         <p class="pricing__note">
-          💳 Paiement sécurisé via Shopify · 🔄 Résiliation simple · 📦 Première box envoyée sous 72h · 💛 1€ est reversé contre la mucoviscidose
+          💳 Paiement sécurisé · 🔄 Résiliation simple · 📦 1ère box en septembre 2026 · 💛 1€ reversé mucoviscidose · 🛡️ 1er mois sans risque
         </p>
 
         <div class="engagement-card fade-in">
@@ -556,6 +566,7 @@
           <div class="cta-final__emoji">🎨</div>
           <h2>Rejoignez la famille Mère-Creudi !</h2>
           <p>"Chaque mois, je prépare ma box avec une seule idée en tête : que vos enfants passent un moment magique. Rejoignez plus de 2 000 familles qui me font confiance !" 💛<br/><em>— La Mère-Creudi</em></p>
+          <p class="cta-final__guarantee">🛡️ <strong>1er mois sans risque</strong> — si la box ne vous convient pas, on vous rembourse, sans question.</p>
           <div class="cta-final__actions">
             <a href="#abonnements" class="btn btn--primary btn--lg">Je veux mes box 🚀</a>
             <a href="#box-du-mois" class="btn btn--white btn--lg">Tester une box d'abord</a>
