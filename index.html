@@ -74,12 +74,13 @@
             Chaque mois, 1 box = 4 activités différentes pour occuper vos enfants sans écran.
             Tout est inclus pour vivre un vrai temps partagé parent-enfant, simplement.
           </p>
+          <p class="hero__offer">22,90€/mois · Sans engagement · Livraison incluse · 1€ reversé</p>
           <div class="hero__actions">
-            <a href="#abonnements" class="btn btn--primary btn--lg">Je veux ma box 🎁</a>
-            <a href="#box-du-mois" class="btn btn--outline btn--lg">Voir la box du mois</a>
+            <a href="#abonnements" class="btn btn--primary btn--lg" data-track="cta-hero-main">Je m'abonne pour 22,90€ 🎁</a>
+            <a href="#box-du-mois" class="btn btn--outline btn--lg" data-track="cta-hero-secondary">Voir la box du mois</a>
           </div>
           <div class="hero__trust">
-            <span>⭐⭐⭐⭐⭐ Plus de 2 000 familles ravies</span>
+            <span>⭐⭐⭐⭐⭐ Plus de 2 000 familles ravies · Note moyenne 4,8/5</span>
           </div>
         </div>
         <div class="hero__visual" aria-hidden="true">
@@ -238,11 +239,20 @@
                 <li>🎨 Aquarelle de jardins</li>
                 <li>🦋 Mobile papillons à découper</li>
               </ul>
+              <div class="month-focus">
+                <h4>Ce mois-ci dans la box</h4>
+                <ol>
+                  <li>Mercredi 1 : mission découverte</li>
+                  <li>Mercredi 2 : activité créative guidée</li>
+                  <li>Mercredi 3 : jeu d'observation</li>
+                  <li>Mercredi 4 : final surprise en famille</li>
+                </ol>
+              </div>
               <div class="current-box__price">
                 <span class="price">22,90€/mois</span>
                 <span class="price__info">1 box par mois · 4 activités · 1€ est reversé contre la mucoviscidose</span>
               </div>
-              <a href="#" class="btn btn--primary btn--lg" data-shopify="box-du-mois">
+              <a href="#" class="btn btn--primary btn--lg" data-shopify="box-du-mois" data-track="cta-box-main">
                 Commander cette box 🛒
               </a>
             </div>
@@ -383,6 +393,14 @@
         <p class="pricing__note">
           💳 Paiement sécurisé via Shopify · 🔄 Résiliation simple · 📦 Première box envoyée sous 72h · 💛 1€ est reversé contre la mucoviscidose
         </p>
+
+        <div class="engagement-card fade-in">
+          <p class="engagement-card__kicker">Engagement solidaire</p>
+          <h3>Chaque abonnement soutient la lutte contre la mucoviscidose</h3>
+          <p>1€ est reversé pour chaque box vendue. Dernière mise à jour des dons : avril 2026.</p>
+          <p class="engagement-card__counter">Total reversé : <span id="donationCounter" data-target="2840">0</span> €</p>
+          <a href="https://www.instagram.com/un_souffle_despoir89/p/DVGRx4sjWFb/" target="_blank" rel="noopener noreferrer" class="btn btn--outline" data-track="association-link">Voir l'association partenaire</a>
+        </div>
       </div>
     </section>
 
@@ -515,6 +533,15 @@
             <div class="testimonial fade-in">
               <p><strong>Y a-t-il des écrans ?</strong><br />Non, la box est pensée pour un temps partagé sans écrans entre parent et enfant.</p>
             </div>
+            <div class="testimonial fade-in">
+              <p><strong>Et si mon enfant termine vite ?</strong><br />Chaque box contient des variantes de difficulté et une surprise pour prolonger l'expérience.</p>
+            </div>
+            <div class="testimonial fade-in">
+              <p><strong>Puis-je offrir l'abonnement ?</strong><br />Oui, c'est une idée cadeau parfaite : il suffit de renseigner l'adresse de l'enfant à la commande.</p>
+            </div>
+            <div class="testimonial fade-in">
+              <p><strong>Que contient exactement une box ?</strong><br />4 activités (1 par mercredi), 1 surprise, supports papier, matériel complet et 1 accessoire.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -588,6 +615,8 @@
       </div>
     </div>
   </footer>
+
+  <a href="#abonnements" class="mobile-sticky-cta" data-track="cta-mobile-sticky">Je m'abonne · 22,90€</a>
 
   <script src="script.js"></script>
 </body>

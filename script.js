@@ -325,7 +325,79 @@ function initScrollSpy() {
 }
 
 /* ========================================================
-   9. INITIALISATION
+   9. TRACKING LÉGER (prêt GA4)
+======================================================== */
+function trackEvent(name, params = {}) {
+  if (typeof window.gtag === 'function') {
+    window.gtag('event', name, params);
+  }
+
+  // Fallback dataLayer pour intégration GTM
+  if (Array.isArray(window.dataLayer)) {
+    window.dataLayer.push({ event: name, ...params });
+  }
+}
+
+function initTracking() {
+  document.querySelectorAll('[data-track]').forEach((el) => {
+    el.addEventListener('click', () => {
+      trackEvent('cta_click', {
+        cta_name: el.getAttribute('data-track'),
+        page: 'home',
+      });
+    });
+  });
+
+  let scrollTracked = false;
+  window.addEventListener('scroll', () => {
+    if (scrollTracked) return;
+    const scrollPct = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+    if (scrollPct >= 50) {
+      scrollTracked = true;
+      trackEvent('scroll_50', { page: 'home' });
+    }
+  }, { passive: true });
+}
+
+/* ========================================================
+   10. COMPTEUR DONS
+======================================================== */
+function initDonationCounter() {
+  const counter = document.getElementById('donationCounter');
+  if (!counter) return;
+
+  const target = Number(counter.getAttribute('data-target') || '0');
+  const duration = 1400;
+  let started = false;
+
+  const animate = () => {
+    const start = performance.now();
+
+    const step = (now) => {
+      const progress = Math.min((now - start) / duration, 1);
+      const value = Math.floor(progress * target);
+      counter.textContent = value.toLocaleString('fr-FR');
+      if (progress < 1) requestAnimationFrame(step);
+    };
+
+    requestAnimationFrame(step);
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting && !started) {
+        started = true;
+        animate();
+        observer.disconnect();
+      }
+    });
+  }, { threshold: 0.3 });
+
+  observer.observe(counter);
+}
+
+/* ========================================================
+   11. INITIALISATION
 ======================================================== */
 document.addEventListener('DOMContentLoaded', () => {
   resolveShopifyLinks();
@@ -335,4 +407,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initSmoothScroll();
   initCountdown();
   initScrollSpy();
+  initTracking();
+  initDonationCounter();
 });
