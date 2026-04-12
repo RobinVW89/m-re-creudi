@@ -24,8 +24,9 @@
       </a>
       <nav class="nav" aria-label="Navigation principale">
         <ul class="nav__list">
-          <li><a href="#concept" class="nav__link">Concept</a></li>
-          <li><a href="#preuves" class="nav__link">Preuves</a></li>
+          <li><a href="#probleme" class="nav__link">Le problème</a></li>
+          <li><a href="#solution" class="nav__link">La solution</a></li>
+          <li><a href="#contenu" class="nav__link">Contenu</a></li>
           <li><a href="#prix" class="nav__link">Prix</a></li>
           <li><a href="#faq" class="nav__link">FAQ</a></li>
         </ul>
@@ -37,8 +38,9 @@
     </div>
     <div class="nav__mobile" id="mobileMenu">
       <ul class="nav__mobile-list">
-        <li><a href="#concept" class="nav__mobile-link">Concept</a></li>
-        <li><a href="#preuves" class="nav__mobile-link">Preuves</a></li>
+        <li><a href="#probleme" class="nav__mobile-link">Le problème</a></li>
+        <li><a href="#solution" class="nav__mobile-link">La solution</a></li>
+        <li><a href="#contenu" class="nav__mobile-link">Contenu</a></li>
         <li><a href="#prix" class="nav__mobile-link">Prix</a></li>
         <li><a href="#faq" class="nav__mobile-link">FAQ</a></li>
         <li><a href="#prix" class="btn btn--primary btn--full">Je m'abonne</a></li>
@@ -60,7 +62,7 @@
           <p class="hero__subtitle">Une box mensuelle avec 4 activités sans écran pour les enfants de 4 à 10 ans.</p>
           <div class="hero__actions">
             <a href="#prix" class="btn btn--primary btn--lg" data-shopify="abonnement-mensuel">Je m'abonne pour 22,90€</a>
-            <a href="#preuves" class="btn btn--outline btn--lg">Voir un exemple de box</a>
+            <a href="#exemple" class="btn btn--outline btn--lg">Voir un exemple de box</a>
           </div>
           <p class="hero__trust">Sans engagement · Paiement sécurisé Shopify · Livraison Mondial Relay</p>
         </div>
@@ -78,44 +80,96 @@
       </div>
     </section>
 
-    <section class="section" id="concept">
+    <section class="section" id="visuels">
       <div class="container">
         <div class="section__header">
-          <span class="section__tag">Concept</span>
-          <h2 class="section__title">1 box = 4 mercredis déjà planifiés</h2>
-          <p class="section__subtitle">4 activités ludiques, créatives et sans écran. Plus de 2h d'activités parent-enfant par mois.</p>
-        </div>
-        <div class="calendar-wrap fade-in">
-          <div class="calendar-card"><span>Mercredi 1</span><strong>Découverte</strong></div>
-          <div class="calendar-card"><span>Mercredi 2</span><strong>Jeu guidé</strong></div>
-          <div class="calendar-card"><span>Mercredi 3</span><strong>Création</strong></div>
-          <div class="calendar-card"><span>Mercredi 4</span><strong>Final surprise</strong></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--alt" id="preuves">
-      <div class="container">
-        <div class="section__header">
-          <span class="section__tag">Preuves</span>
+          <span class="section__tag">Preuves visuelles</span>
           <h2 class="section__title">Ce que les familles reçoivent vraiment</h2>
         </div>
         <div class="visual-grid">
           <article class="visual-card fade-in">
             <div class="visual-card__ph" aria-hidden="true">📦</div>
             <h3>Box ouverte</h3>
-            <p>Tout le matériel est inclus, prêt à l'emploi.</p>
+            <p>Vue d'ensemble de la box avec tout le matériel inclus.</p>
           </article>
           <article class="visual-card fade-in">
             <div class="visual-card__ph" aria-hidden="true">🃏</div>
             <h3>Cartes et fiches</h3>
-            <p>Supports papier pour guider les activités étape par étape.</p>
+            <p>Supports papier prêts à l'emploi pour guider chaque activité.</p>
           </article>
           <article class="visual-card fade-in">
             <div class="visual-card__ph" aria-hidden="true">🧒</div>
-            <h3>Moment sans écran</h3>
-            <p>Un vrai rituel parent-enfant chaque mercredi.</p>
+            <h3>Enfants en activité</h3>
+            <p>Moment concret d'utilisation, sans écran, à la maison.</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="probleme">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Le problème</span>
+          <h2 class="section__title">Chaque mercredi, c'est la même galère</h2>
+          <p class="section__subtitle">"Je m'ennuie" · "On fait quoi aujourd'hui ?" · "J'ai déjà fini"</p>
+        </div>
+        <div class="problem-grid">
+          <article class="info-card fade-in">
+            <h3>Manque d'idées</h3>
+            <p>Trouver une activité adaptée prend du temps et de l'énergie.</p>
+          </article>
+          <article class="info-card fade-in">
+            <h3>Trop d'écrans</h3>
+            <p>Quand on manque de solutions, les écrans prennent vite la place.</p>
+          </article>
+          <article class="info-card fade-in">
+            <h3>Charge mentale parentale</h3>
+            <p>Préparer le matériel et gérer le rythme devient épuisant.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="solution">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">La solution</span>
+          <h2 class="section__title">1 box = 4 mercredis</h2>
+          <p class="section__subtitle">Un calendrier prêt à l'emploi pour tout le mois.</p>
+        </div>
+        <div class="calendar-wrap fade-in">
+          <div class="calendar-card"><span>Mercredi 1</span><strong>Activité découverte</strong></div>
+          <div class="calendar-card"><span>Mercredi 2</span><strong>Jeu d'indices</strong></div>
+          <div class="calendar-card"><span>Mercredi 3</span><strong>Création guidée</strong></div>
+          <div class="calendar-card"><span>Mercredi 4</span><strong>Final surprise</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contenu">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Contenu de la box</span>
+          <h2 class="section__title">Tout est prêt, vous n'avez plus qu'à profiter</h2>
+        </div>
+        <div class="content-grid">
+          <article class="content-item fade-in"><h3>4 activités complètes</h3><p>Une par mercredi, progressives et variées.</p></article>
+          <article class="content-item fade-in"><h3>1 surprise</h3><p>Un petit bonus pour garder l'effet waouh.</p></article>
+          <article class="content-item fade-in"><h3>Matériel inclus</h3><p>Pas besoin d'acheter quoi que ce soit en plus.</p></article>
+          <article class="content-item fade-in"><h3>Supports papier</h3><p>Cartes, fiches, jeux imprimés et faciles à utiliser.</p></article>
+          <article class="content-item fade-in"><h3>1 accessoire</h3><p>Exemple : loupe, pinceau ou stickers.</p></article>
+          <article class="content-item fade-in"><h3>+ de 2h d'activités</h3><p>Un vrai moment parent-enfant sans écran.</p></article>
+        </div>
+        <p class="section__subtitle content-note">Coût cible de fabrication : 5 à 6€ par box pour garder un modèle durable.</p>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="exemple">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Exemple box 1</span>
+          <h2 class="section__title">Qui a mangé le gâteau ?</h2>
+          <p class="section__subtitle">Une mini enquête en 4 semaines.</p>
         </div>
         <ol class="story-timeline fade-in">
           <li><strong>Semaine 1 :</strong> Découverte des suspects (cartes animaux).</li>
@@ -133,19 +187,20 @@
           </ul>
           <a href="#" class="btn btn--outline" data-shopify="box-exemple">Voir cette box sur Shopify</a>
         </div>
-        <div class="review-grid">
-          <article class="info-card fade-in">
-            <h3>Claire, maman de Léo (6 ans)</h3>
-            <p>"Le mercredi est devenu un moment attendu. Tout est prêt, zéro stress."</p>
-          </article>
-          <article class="info-card fade-in">
-            <h3>Nadia, maman de Yasmine (8 ans)</h3>
-            <p>"Les activités sont variées et vraiment sans écran. Ma fille adore."</p>
-          </article>
-          <article class="info-card fade-in">
-            <h3>Thomas, papa de Max (7 ans)</h3>
-            <p>"Simple, clair et ludique. On passe enfin un vrai moment parent-enfant."</p>
-          </article>
+      </div>
+    </section>
+
+    <section class="section" id="arguments">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Pourquoi ça marche</span>
+          <h2 class="section__title">Un format simple et efficace</h2>
+        </div>
+        <div class="argument-list">
+          <article class="info-card fade-in"><h3>Sans écran</h3><p>Les enfants manipulent, créent et jouent vraiment.</p></article>
+          <article class="info-card fade-in"><h3>Ludique et éducatif</h3><p>Chaque activité développe logique, motricité et imagination.</p></article>
+          <article class="info-card fade-in"><h3>Simple à utiliser</h3><p>Tout est expliqué pas à pas pour les parents.</p></article>
+          <article class="info-card fade-in"><h3>Moment parent-enfant</h3><p>Un rituel du mercredi qui crée des souvenirs.</p></article>
         </div>
       </div>
     </section>
@@ -176,6 +231,44 @@
       </div>
     </section>
 
+    <section class="section section--alt" id="rassurance">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Rassurance</span>
+          <h2 class="section__title">Aucune mauvaise surprise</h2>
+        </div>
+        <div class="argument-list">
+          <article class="info-card fade-in"><h3>Résiliation facile</h3><p>Un clic depuis votre espace client Shopify.</p></article>
+          <article class="info-card fade-in"><h3>Paiement sécurisé</h3><p>CB via checkout Shopify certifié.</p></article>
+          <article class="info-card fade-in"><h3>Livraison mensuelle</h3><p>Expédition via Mondial Relay chaque mois.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="avis">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Avis familles</span>
+          <h2 class="section__title">Les parents recommandent Box du Mercredi</h2>
+          <p class="section__subtitle">Note moyenne : 4,8/5 (avis clients collectés après livraison).</p>
+        </div>
+        <div class="review-grid">
+          <article class="info-card fade-in">
+            <h3>Claire, maman de Léo (6 ans)</h3>
+            <p>"Le mercredi est devenu un moment attendu. Tout est prêt, zéro stress."</p>
+          </article>
+          <article class="info-card fade-in">
+            <h3>Nadia, maman de Yasmine (8 ans)</h3>
+            <p>"Les activités sont variées et vraiment sans écran. Ma fille adore."</p>
+          </article>
+          <article class="info-card fade-in">
+            <h3>Thomas, papa de Max (7 ans)</h3>
+            <p>"Simple, clair et ludique. On passe enfin un vrai moment parent-enfant."</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="section section--alt" id="faq">
       <div class="container">
         <div class="section__header">
@@ -199,7 +292,6 @@
           <img src="Logo Site/LOGO.png" alt="Logo La Mère-Creudi" class="logo__img" />
         </a>
         <p>Ce n'est pas une simple box. C'est un rituel du mercredi pour les familles.</p>
-        <p>Note moyenne clients: 4,8/5</p>
       </div>
       <div class="footer__links">
         <a href="#prix">Abonnement 22,90€</a>
